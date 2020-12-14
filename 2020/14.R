@@ -14,9 +14,10 @@ options(scipen = 100, digits = 4)
 
 input  <- fread('input/Input_day14.txt', sep = ",", header = FALSE, fill = TRUE)$V1
 
-ls<- list()
 
 #Quest1
+
+ls<- list()
 for (i in 1:length(input)){
   if(grepl("mask", input[i])){
     mask <- substr(input[i], 8, nchar(input[i]))
@@ -35,14 +36,15 @@ for (i in 1:length(input)){
   }
 }
 
-ans <- sum(unlist(ls))
-ans
+ans1 <- sum(unlist(ls))
+ans1
 # 13105044880745
 
-#Quest2
-ls<- list()
 
-#Quest1
+
+#Quest2
+
+ls<- list()
 for (i in 1:length(input)){
   if(grepl("mask", input[i])){
     mask <- substr(input[i], 8, nchar(input[i]))
@@ -75,6 +77,6 @@ for (i in 1:length(input)){
   }
 }
 
-ans <- sum(unlist(ls))
-ans
+ans2 <- sum(unlist(ls))
+ans2
 # 3505392154485
