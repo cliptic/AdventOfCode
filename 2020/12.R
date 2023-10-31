@@ -116,3 +116,10 @@ XX <- abs(moves3[nrow(moves3), "shipX"])
 YY <- abs(moves3[nrow(moves3), "shipY"])
 ans2 <- XX + YY
 ans2
+
+# ###
+# moves3 <- moves3 %>%
+#   mutate(Xpoint = X + shipX) %>%
+#   mutate(Ypoint = Y + shipY)
+# fig <- plot(moves3$shipX, moves3$shipY, type="l", col =  "red")
+#   lines(moves3$Xpoint, moves3$Ypoint, type="l", col = "blue")

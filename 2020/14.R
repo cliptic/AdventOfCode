@@ -14,7 +14,6 @@ options(scipen = 100, digits = 4)
 
 input  <- fread('input/Input_day14.txt', sep = ",", header = FALSE, fill = TRUE)$V1
 
-
 #Quest1
 
 ls<- list()
